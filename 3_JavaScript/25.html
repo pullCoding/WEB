@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let theSubway = ["2호선","9호선","7호설","4호선","3호선"];
+        let newLine1 = "1호선";
+        let newLine2 = "분당선";
+
+        theSubway.shift();
+        // 왼쪽으로 밀어버리는 것음, 인덱스을 벗어난 값을 사라짐
+        console.log(theSubway)
+
+        theSubway.unshift(newLine1);
+        // 오른쪽으로 밀어버리는 것음, 인덱스을 벗어난 값을 사라짐
+        console.log(theSubway) // 오른쪽으로 밀기 & newLine1 삽입
+
+        let sub = theSubway.pop();
+        console.log(sub);
+        console.log(theSubway);
+        theSubway.push(newLine2);
+        console(theSubway);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

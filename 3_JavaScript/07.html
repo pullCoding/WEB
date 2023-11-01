@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let gender = prompt("당신의 성별은", "남성");
+        let age = prompt("당신의 나이는", "20");
+        let result = gender == "남성" && (age >= 20 && age <= 35); // boolean
+        // let을 쓰는 것만이 좋지 않음
+        document.write(result)
+
+        // prompt("설명", "많이 쓰이는 답변") 기본형
+        // 이것을 배운 이유 웹에서만 사용할수있는 기능
+        // prompt는 입력을 받음
+    </script>
+</body>
+</html>

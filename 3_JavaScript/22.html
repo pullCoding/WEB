@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h3>문자 치환</h3>");
+        let theText1 = "img2_out.jpg";
+        document.write(theText1+"<br>");
+        theText1 = theText1.replace("out", "in");
+        document.write(theText1+"<br>");
+
+        document.write("<h3>문자 분할 및 추출</h3>");
+        let theText2 = "image/img10.jpg";
+        document.write(theText2+"<br>");
+        
+        theText2 = theText2.split("/")[1];
+        // /을 기준으로 2개로 분할됨 images img10.jpg
+        // [0] images [1] img10.jpg
+        document.write(theText2+"<br>");
+        
+        theText2 = theText2.substring(3);
+        document.write(theText2+"<br>");
+        
+        theText2 = parseInt(theText2);
+        // 숫자만 추출하는 것
+        document.write(theText2 + "<br>");
+        // 10.4 -> 10
+        // 11 -> 11
+        // 10.jpg -> 10
+        // img10 -> error 붙어있는 것은 숫자만 추출해주지 않음
+
+        document.write("<h3>마지막 문자추출</h3>");
+        let theText3 = "hello javescript";
+        let theText3L = theText3.length; // 길이을 출력하지 index을 출력하지 않음
+        let lastIndex = theText3L-1;
+        document.write(theText3[lastIndex]+"<br>");
+        document.write(theText3.charAt(lastIndex)+"<br>");
+        document.write(theText3.substring(lastIndex)+"<br>");
+        document.write(theText3.substr(lastIndex)+"<br>");
+        document.write(theText3.slice(lastIndex)+"<br>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

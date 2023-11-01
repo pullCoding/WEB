@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let result = "10+20";
+        document.write(result+"<br>");
+        let result1 = eval(result);
+        document.write(result1+"<br>")
+
+        let num = 100;
+        document.write("num"+10+"<br>");
+        document.write(eval("num")+10+"<br>");
+
+        let result2 = isNaN("010-1234-1234");
+        // 문자이면 true, 숫자면 false
+        // "123" false, "010-1234-1234" true
+        document.write(result2);
+
+        // 내장 함수 : 자바스크립트에서 사용자의 편의을 위해 사용되는 함수
+
+        // eval() : 무자열을 자바스크립트 문장으로 변화 (수식은 계산식으로, 무자는 변수로)
+        // parent() : 문자열 형태의 숫자을 정수로 변환 "123" -> 123
+        // parseFloat() : 숫자를 실수로 변환
+        // isNaN(): Not a number의 약자로 숫자가 아닌 문자가 포함되는 true 반환
+        // isFinite(): 주인 값이 무리수인지 판단
+        // Number() : 문자열을 숫자로 변환
+        // String() : 숫자를 문자형으로 변환
+        // escape() : 문자열 16진수 아스키코드 값을 변환
+        // unescape() : 변환 것을 다시 되돌림
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let kor = prompt("국어점수는?", "0");
+        // let eng = prompt("영어점수는?", "0");
+        // let math = prompt("수학점수는?", "0");
+        // 168350 문자열이라 이러한 값이 나옴
+        let kor = Number(prompt("국어점수는?", "0"));
+        let eng = Number(prompt("영어점수는?", "0"));
+        let math = Number(prompt("수학점수는?", "0"));
+        let avg = (kor + eng + math) / 3;
+        let result = avg >= 70 && kor >= 50 && eng >= 50 && math >= 50;
+        document.write(avg+'<br>')
+        document.write((result==true) ? "pass" : "fall");
+
+        // Number()을 알기 위해 만듬
+        // Number() == int
+    </script>
+</body>
+</html>

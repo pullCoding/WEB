@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function theFnc() {
+            alert("JavaScript");
+        }
+
+        // let myBtn = document.getElementById("btn1");
+        // myBtn.onclick = theFnc();
+
+
+        // DOM Level 0
+        // 객체에 이벤트를 직접 연결하여 작도하게 하는 고전적인 방식
+        // 한 객체이 동시에 같은 이벤트를 두 번 이상 작동할 수 없다는 문제점이 있음
+        // 한 객체에 같은 이벤트 를 두번 이상 적용하게 되면 제일 마지막에 적용된 이벤트를 실행함
+        window.onload = function () {
+            let myBtn1 = document.getElementById("btn1");
+            myBtn.onclick = theFnc;
+        }
+        window.onload = function () {
+            let myBtn2 = document.getElementById("btn2");
+            myBtn2.onclick = theFnc;
+        }
+
+
+        // DOM(Document Object Model, 문서, 객체, 구조)
+        // 웹 브라우저에서 일아는 모든 행동들은 '이벤트(event)'타고 함. (클릭이벤트)
+        // 특징 이벤트가 발생하는 시점에서 함수를 초출하거나 ,스크립트를 실행하게 하는데,
+        // 이렇게 요소를 '이벤트 핸들러' 라고 함
+
+        // 이벤트 발생
+        // onload : 문서를 모두 불러옥 나서 실행
+        // unonload : 문서를 종료한 대 발생
+        // ondblclick : 대사을 더블클릭했을 때
+        // onclick : 대상을 클릭했을때
+        // onkeypress : 키보드을 눌었을때
+        // onkeydown : 키보드 눌릴때
+        // onkeyup : 키보드 땔떄
+        // onmouseover: 이 이벤트는 마우스 포인터가 요소 위로 이동할 때 발생합니다.
+        // onblur: 이 이벤트는 요소가 포커스를 잃을 때 발생합니다(예: 입력 필드 외부를 클릭할 때).
+        // onsubmit: 이 이벤트는 주로 제출 버튼을 클릭하여 양식이 제출될 때 발생합니다.
+        // onreset: 이 이벤트는 주로 재설정 버튼을 클릭하여 양식이 재설정될 때 발생합니다.
+        // onchange: 이 이벤트는 입력 요소의 값이 변경될 때 발생합니다.
+        // onmousemove: 이 이벤트는 마우스 포인터가 요소 내부 또는 요소 위로 이동할 때 발생합니다.
+        // onresize: 이 이벤트는 브라우저 창 크기가 조정될 때 발생합니다.
+        // onerror: 이 이벤트는 오류가 발생할 때 발생하며
+        // , JavaScript 오류 또는 이미지 로드 오류와 같은 오류가 포함됩니다.
+        // onabort: 이 이벤트는 사용자 또는 스크립트에 의해 
+        // 이미지 또는 다른 외부 리소스 로드가 중단될 때 발생합니다.
+    </script>
+</head>
+
+<body>
+    <button id="btn1">버튼1</button>
+    <button id="btn2">버튼2</button>
+</body>
+
+</html>
