@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- table 태그
+    HTML에서 표를 생성할 때는 table 태그를 사용한다
+    표 관련 태그는 모두 table 태그 안에서 사용해야 한다 -->
+
+
+    <p>표제목</p>
+    <table></table>
+    <!-- 위와 같이 하는것은 웹 접근성에 맞기 않다 -->
+
+
+    <!-- 1. caption 태그
+    표 제목을 지정하는 태그이다
+    표에서 표를 생성할 대 웹 전급성을 향상하는 바업의 하나이다 -->
+
+
+    <!-- 잘못된 예시 -->
+    <caption>표제목</caption>
+    <table border="1"></table><br>
+
+    <!-- 올바른 예시 -->
+    <table border="1">
+        <caption>표제목</caption>
+    </table><br>
+    <!-- 2. tr 태그
+        tr(table row) 태그는 표에서 행을 생성하는 태그이다
+        tr태그는 하나의 행을 생성하므로 여러 행을 만들고 싶으면 tr 택를 여러 번 사용해야 한다 -->
+
+    <table border="1">
+        <tr></tr>
+    </table><br>
+
+    <!-- 3. th, td 태그
+    th(table header), td(table date)
+    th태그는 필드을 만들때 사용함, 가운데 정렬, 글씨를 굵게함,
+    td태그는 튜플을 만들때 사용함, 가운데 정렬 안됨, 글씨를 굵게하기 않음 -->
+
+    <table border="1">
+        <th>제목</th>
+        <td>내용</td>
+    </table><br>
+
+    <table border="1">
+        <tr>
+            <th>학년</th>
+            <th>반</th>
+            <th>번호</th>
+            <th>이름</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>11</td>
+            <td>1</td>
+            <td>홍길동</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>11</td>
+            <td>2</td>
+            <td>장발장</td>
+        </tr>
+    </table>
+    <!-- tr는 하나의 행을 의미함 -->
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* a {
+    text-decoration: none;
+    color: black;
+}
+ul, li {
+    list-style: none;
+} */
+body {
+    font : 12px "돋움", "굴림";
+    /* 돋움, 굴림은 돋움이 없을때 굴림이 사용됨 */
+    width: 300px;
+    margin: 10px;
+    /* border: 1px solid rebeccapurple; */
+}
+h1 {
+    float: left;
+    font-size: 25px;
+    background: #c00;
+    padding: 5px;
+    color: aliceblue;
+}
+p span {
+    float: right;
+    border: 3px dotted orange;
+}
+p {
+    text-align: justify;
+    /* justify는 균등정렬을 한다 */
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+body {
+    font-size: 15px;
+    font-family: Monoton;
+}
+#gnb li {
+    display: inline;
+}
+#gnb li a {
+    display: inline-block;
+    background: #c00;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    /* height값을 준것을 line_height에 적으면 세로 가운데 정렬이됨 */
+    text-decoration: none;
+    transition: all 0.6s;
+    /* 스타일이 적용 되는것을
+    지정한 시간만큼 늦게 적용함 */
+}
+
+#gnb li a:hover {
+    background: #369;
+    text-decoration: underline;
+}
+
+/* #gnb는 전체을 잡을때 사용함(자손 선택자에서 사용)*/

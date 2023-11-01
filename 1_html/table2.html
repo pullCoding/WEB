@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- rowspan 속성과 colspan 속성
+    행끼리 병합 - colspan 속성
+    열끼리 병합 - rowspan 속성
+    병합하고 싶은 셀의 개수를 적어서 사용한다
+    단, 병합한 셀의 개수만큼 가음 행 또는 열을 비워둬야 한다 -->
+
+    <table border="1">
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1,500원</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td rowspan="2">1,000원</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+            <!-- <td>1,000원</td> -->
+        </tr>
+        <tr>
+            <td>총 금액</td>
+            <td colspan="3">6,500원</td>
+            <!-- <td></td>
+            <td></td> -->
+        </tr>
+    </table>
+
+    <!-- tr>td*4 부모>자식*반복할 횟수-->
+    <!-- (tr>td*4)*4  (부모>자식*반복할 횟수)*반복할 횟수-->
+</body>
+
+</html>

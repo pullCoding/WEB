@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--hidden type-->
+    <!--<input type="hidden" name="정보을 보낼 이름" value="서버로 보낼 정보-->
+
+    <!--text type-->
+    <input type="text" name="infor" size="10" value="123" maxlength="10">
+    <!--name="구별할수있는 이름" size="글자가 보일수있는 최대수" value="입력창에 표시할 내용" amxlenght="입력할수있는 최대수" -->
+
+    <!--password type-->
+    <input type="password" name="pass" size="10" maxlength="10">
+    <!--name="구별할수있는 이름" size="글자가 보일수있는 최대수" amxlenght="입력할수있는 최대수"-->
+
+    <!--name, id, autocomplete속성을 사용할수있다.-->
+
+    <!--search type-->
+    <input type="search">
+
+    <!--url type-->
+    <input type="url">
+
+    <!--email type-->
+    <input type="email">
+
+    <!--tel type-->
+    <input type="tel">
+
+<!--------------------------------------->
+
+    <!--number type-->
+    <input type="number">
+    <!--min(입력할수있는 최소값), max(입력할수있는 최대값), step(한번 증가/감소을 할때 몇개씩 증가/감소할것있지 기본값 1), value(필드에 표시할수있는 초기값)-->
+
+    <!--range type-->
+    <input type="range">
+    <!--min:어디 까지 최소값으로 잡을까? max:어디 까지 최대값으로 잡을까? step:몇개씩 올리까? value:몇 표시할까?(숫자)-->
+
+    <!--radio type-->
+    <!--채크을 한개만 할수있음-->
+    <input type="radio">
+    <!--name 출력할 이름 value 보낼 정보-->
+
+
+    <!--checkbox type-->
+    <!--채크을 여러개 할수있음-->
+    <input type="checkbox">
+     <!--name 출력할 이름 value 보낼 정보 checked 기본으로 선택하 놓수있게 함-->
+
+    <!--color type-->
+    <input type="color">
+    <!--value 기본으로 설정할 색-->
+
+    <!--date month week time datetime datetime-local type-->
+    
+    <input type="date">
+    <!--년 월 일 다 표시 및 조절-->
+    
+    <input type="month">
+    <!--년 월 표시 및 조절-->
+    
+    <input type="week">
+    <!--주 표시 및 조절-->
+
+    <input type="time">
+    <!--시간 표시 및 조절-->
+
+    <input type="datetime">
+    <!--날짜 시간 표시 및 조절-->
+
+    <input type="datetime-local">
+    <!--날짜 시간 표시 및 조절-->
+
+    <!--submit reset type-->
+    <input type="submit">
+    <input type="reset">
+    <!--value 버튼 이름을 출력해줌-->
+
+    <!--inmge type-->
+    <input type="image">
+    <!--size 크기을 조절할수있음-->
+
+    <!--file type-->
+    <input type="file">
+
+    <!--botton type-->
+    <input type="button">
+    <!--window.open() 새창 열기-->
+
+    <!--다양한 속성-->
+    
+    <!--autofocus required : 
+    웹에 처음 들어간다면 바로 입력할수있게 함-->
+    
+    <!--placeholder :
+    입력하기 전에 입력창에 글자을 표시할수있다-->
+
+    <!--readonly :
+    사용자가 지정한 정보을 수정하기 못하게 함-->
+
+    <!--required :
+    정보을 입력하지 않고 체줄하러고 하려고 한다면 체줄하지 않게 만듬
+    예시 : <input type="text" id="name" name="name" required>
+    -->
+
+    <!--min max step :
+    min 최소 입력값 max 최대 입력값 step 지정한 간격으로 수을 높일수있다.-->
+
+    <!--size minlength maxlength :
+    size 가로의 크기을 조절 할수있음 minlength 입력할수있는 최소 자리 maxlength 입력할수있는 최대 자리-->
+
+    <!--formaction : action과 역할이 똑같음 
+    실행할 프로그램의 주소을 입력하는 속성이다
+    submin이랑 image type에서 사용할수있다.-->
+
+    <!--formenctype
+    
+    application/x-www-form-urlencoded: 모든 문자가 인코딩됨. 공백은 "+" 기호로 변환되고,
+    특수 문자는 ASCII의 HEX 값으로 변환됨. 정보의 내용이 변할 수 있음.
+    
+    multipart/form-data: 파일 같은 것은 정보가 변할 수 있기 때문에 인코딩을 하지
+    않음. 정보의 내용이 변할 수 있음.
+    
+    text/plain: 특수문자는 인코딩하지 않음. 정보의 내용이 변할 수 있음.-->
+
+    <!--formmenthod menthod와 역활이 똑같음
+    
+    이미 form에서 형식을 지정했더라도 formmenthod에서 다른 형식으로 지정했다면
+    form으로 지정한 형식은 무시한다. 제출할때 formmenthod에 지정한 형식이 있다면 위에 지정한 정보에 형식이
+    formmenthod로 지정한 형식으로 다 변한다.-->
+
+    <!--formnovalidate
+    
+    유효성 검사를 하지 않음
+    유효성 검사란 이메일이나 비밀번호을 입력해야 할때 조건에 지정하는지 검사하는것이다.-->
+
+    <!--formtarget target가 역할이 똑같음
+    
+    지정한 역할을 실행할때 새창으로 출력할것이지 와 같이 지정을 해줄수있음-->
+
+    <!--height, width
+    height는 이미지의 너비을 설정할수있고 width는 이미지의 높이을 설정할수있다.-->
+
+    <!--list
+    이미 지정한 값을 출력해줌-->
+
+    <!--multiple
+    emali이나 file type의 속성에 두개이상의 값을 지정할수있게 해줌 -->
+
+    
+
+
+
+
+
+
+
+    
+
+</body>
+</html>

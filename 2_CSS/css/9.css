@@ -1,0 +1,41 @@
+* {
+    margin: 0; padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    color: blueviolet;
+}
+
+body {
+    font: 12px "돋움";
+    margin: 10px;
+}
+
+#container {
+    float: left;
+    width: 530px;
+    background-color: red;
+}
+.menu {
+    width: 130px;
+    float: left;
+    margin: 10px;
+}
+.content {
+    widows: 350px;
+    float: right;
+    border-left: 1px solid #333;
+    padding: 10px;
+}
+
+#footer {
+    clear: both;
+}
+address {
+    font: none;
+    padding: 10px;
+}

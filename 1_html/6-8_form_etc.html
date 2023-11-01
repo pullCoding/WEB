@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<br lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+    <br>
+    <!-- 1. disbled 속성
+        상용작용 요소를 비활성화하며
+        input, textarea, select, button 등에서 사용할수있음
+        태그를 비황성화하는 것은 입력 요소에는 텍스트을 입력할수 없고, 목록 상자는 항목을 선택할수 없고,
+        버튼 요소는 버튼을 클릭할 수 없다 -->
+
+    <input type="text" value="테스트 택스트" disabled>
+    <button disabled>button</button>
+
+    <!-- 2.readonly 속성
+        상호작용 요소를 읽기 전용으로 변경하는 속성이다
+        input 중 일부와 textarea 태그에 사용할 수 있음 -->
+
+    <br><br>
+    <input type="password" value="123456789" readonly>
+
+    <br><br>
+    <textarea readonly></textarea>
+    <!--disbled 수정이 불가능 해보기게 하는것
+        readonly 수정이 가능해 해보이지만 수정불가 -->
+
+    <!-- 3. maxlength 속성
+        입력할 수 있는 글자 수를 제한할 때 사용하는 속성이다
+        textarea, input 태그의 text, search, url, tel, password, date, month, week, time,
+        datetime-local, number 일 때만 사용 가능하다. -->
+
+    <input type="url" maxlength="4"><br>
+    <textarea maxlength="10"></textarea><br>
+
+    <!-- 4. checked 속성
+        요소를 선택된 상태로 표시하는 속성이다
+        ckeckbox, radio인 요소에 사용할 수 있다 -->
+    
+    <fieldset>
+        <legend>좋아하는 과일</legend>
+        <input type="checkbox" name="banana" id="banana" value="banana" checked>
+        <label for="banana">banana</label><br>
+        <input type="checkbox" name="apple" id="banana" value="apple" checked disabled>
+        <label for="apple">apple</label><br>
+        <input type="checkbox" name="orange" id="orange" value="orange">
+        <label for="orange">orange</label>
+    </fieldset>
+
+    <!-- 5. placeholder 속성
+    입력 요소에 어떤 값으 입력한면 된느지 힌트를 적는 용도롤 사용하는 속성이다 -->
+
+    <input type="tel" placeholder="010-1234-1234의 형태로 적어주세요" size="30">
+    
+    </body>
+
+</html>

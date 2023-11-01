@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- select 태그를 사용하면 콤보박스를 생성할 수 있다. -->
+
+    <!-- option는 실제로 전송되는 값이다. -->
+    <select name="city" id="city">
+        <option value="none" selected>==도시선택==</option>
+        <option value="01">서울</option>
+        <option value="07">성남</option>
+        <option value="10">수원</option>
+        <option value="25">삼척</option>
+        <option value="50">제주</option>
+    </select>
+
+    <select name="city2" id="city2">
+        <optgroup label="서울시">
+            <option value="01-1">강북구</option>
+            <option value="01-3">강남구</option>
+            <option value="01-7">관악구</option>
+            <option value="01-9">중원구</option>
+        </optgroup>
+        <optgroup label="성남시">
+            <option value="07-1">분당구</option>
+            <option value="07-2">중원구</option>
+            <option value="07-7">수정구</option>
+        </optgroup>
+    </select>
+    <!-- 다른 지역에 같은 이름에 마을이 있을수 있기 때문에
+    따로 구분하기 위해 사용한다. -->
+
+    <!-- selected 하나의 뭐가 처음에 보이면 좋겠다고 하는것 -->
+
+    <!-- size는 선택을 하는 칸에 크기을 설정할수있다 -->
+
+    <!-- multiple은 여러개을 선택을 할수있게한다 size을 설정한것 처럼 크게 보인다.
+    multiple은 별로 사용하지 않는 속성이다. -->
+
+
+</body>
+
+</html>

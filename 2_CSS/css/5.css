@@ -1,0 +1,43 @@
+body {
+    font-size: 14px;
+}
+p {
+    width: 550px;
+    /* 안쪽 영역의 크기를 넓게함 */
+    padding: 5px;
+    /* 태그의 사이의 거리을 넓게함 */
+    margin: 50px;
+}
+.p1 {
+    /* 실선 */
+    border: 1px solid #123;
+}
+.p2 {
+    /* 점선 */
+    border: 5px dotted #123;
+}
+.p3 {
+    /* 파선 */
+    border: 5px dashed #123;
+}
+.p4 {
+    /* 액자 */
+    border: 10px groove #06c;
+}
+.p5 {
+    /* 액자 */
+    border: 10px ridge #f06c;
+}
+.p6 {
+    /* 액자 */
+    border: 10px inset #0c3;
+}
+.p7 {
+    /* 액자 */
+    border: 10px outset #c63;
+}
+.p8 {
+    /* 없음 */
+    border: 10px none #ddd;
+}
+/* 수가 같을때는 3개로 줄일수있음 */

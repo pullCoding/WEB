@@ -1,0 +1,22 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: bgchange;
+    animation-duration: 10s;
+    animation-delay: 3s;
+
+    animation-iteration-count: 3;
+    /* infinite 애니메이션이 무한히 반복됨
+    animation-iteration-count*/
+
+    animation-direction: reverse;
+    /* reverse는 역순으로 */
+}
+
+@keyframes bgchange {
+    0% { background-color: red; }
+    25% { background-color: orange; }
+    50% { background-color: yellow; }
+    75% { background-color: green; }
+}

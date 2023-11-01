@@ -1,0 +1,28 @@
+.box::after {
+    content: "항목을 선택해주세요.";
+}
+
+.box::before {
+    content: "MENU";
+}
+
+p::first-letter {
+    font-size: 300%;
+    color: red;
+}
+
+p {
+    border-bottom: 1px dashed black;
+}
+
+p:first-child::first-letter {
+    color: blue;
+}
+
+p:nth-child(2)::first-letter{
+    color: pink;
+}
+
+p:nth-child(3) {
+    border: none;
+}

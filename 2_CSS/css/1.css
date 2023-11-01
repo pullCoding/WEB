@@ -1,0 +1,57 @@
+/* 태그 선택자 : 태그을 적으면됨 */
+p {
+    color: blue;
+}
+
+/* id 선택자 : #을 적고 아이디을 적음 */
+#tea {
+    color: red;
+}
+
+/* class 선택자 : .을 적고 class을 적음 */
+.house {
+    color: green;
+}
+
+/* 자손 선택자 : 띄어쓰기로 표현함 */
+자신
+ul li{
+    background-color: skyblue;
+}
+
+/* 전체 선택자 : 모든 태그에 적용됨 */
+* {
+    font-family: 궁서;
+}
+
+/* 자식 선택자 : 자손에서 띄어쓰기 대신 >을 사용한다 */
+/* 자신 바로 아래 까지 */
+ul > li {
+    font-weight: bold;
+    color: yellow;
+}
+
+/* 인접 선택자 :  */
+h1 + p {
+    font-family: 굴림;
+    color: pink;
+    background-color: green;
+}
+
+/* 지정한 태그에 속성을 적용 */
+h1 + p + p {
+    font-family: 돋움;
+    color:  hotpink;
+}
+
+/* p태그에 class선택자을 가진 태그만 속성 적용 */
+p[class] {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* 한가지의 속성을 여러 태그에 줄수 있음 */
+h1, h2, h3{
+    border-bottom: 1px solid #000;
+}
+/* css는 위에서 아래로 적용된다  */

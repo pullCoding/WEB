@@ -1,0 +1,19 @@
+ul, li {
+    list-style: none;
+}
+a {
+    color: black;
+    font-family: 굴림;
+    font-size: 20px;
+    background-color: yellow;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+a:hover {
+    color: red;
+    font-family: 궁서;
+    font-weight: bold;
+    background-color: pink;
+    text-decoration: underline;
+}

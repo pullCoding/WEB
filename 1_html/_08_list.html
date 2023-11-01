@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--방법1-->
+    <select size="5" multiple>
+        <!--size는 한번에 표시할 정보의 개수, multiple는 ctrl을 누르고 여러개의 정보을 입력하게 할수있음-->
+        <option value="보낼정보">정보</option>
+        <!--value은 서버에 보낼 값을 지정함-->
+        <option value="보낼정보">정보</option>
+        <option value="보낼정보">정보</option>
+        <option value="보낼정보" selected>정보</option>
+        <!--selected는 기본적으로 선택이 되있게 만드는 속성이다.-->
+        <option value="보낼정보">정보</option>
+    </select>
+
+    <!--방법2-->
+    <select id="class">
+        <optgroup label="대표 정보">
+            <!--optgroup의 label속성은 optgroup의 대표적은 이름을 적용해줄수있다.-->
+            <option value="보낼정보">정보</option>
+            <option value="보낼정보">정보</option>
+        </optgroup>
+        <optgroup label="대표 정보1">
+            <option value="보낼정보">정보</option>
+            <option value="보낼정보">정보</option>
+        </optgroup>
+    </select>
+
+    <!--방법3-->
+    <input type="text" list="name">
+    <datalist id="name">
+        <option value="보낼정보" label="정보"></option>
+        <!--label은 표시되는 정보이다.-->
+        <option value="보낼정보" label="정보"></option>
+    </datalist>
+
+    <!--방법4-->
+    <textarea name="다른 폼 요소와 구분하기 위해 사용" id="" cols="30" rows="10">
+        아무내용
+    </textarea>
+    <!--cols 가로의 너비 단위:픽셀, rows 한번에 표시할 창의 크기(지정한 크기보다 크다면 스크롤 막대가 생김)-->
+
+</body>
+</html>
