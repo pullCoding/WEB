@@ -22,19 +22,25 @@
             $(".obj3").children(".theObj1").css("color", "purple");
 
             // 부모 선택자 고르기
-            $(".obj5").parent().css("border","dashed 2px #f80");
+            $(".obj5").parent().css("border", "dashed 2px #f80");
 
             // 조상 자손(자신 밑에 있는 것만)
-            $("#wrap h3").css("font-size","20px").css("background-color","yellow")
+            $("#wrap h3").css("font-size", "20px").css("background-color", "yellow")
 
-            $(".obj5").next().css("color","orange"); //동생 선택자 선택
-            $(".obj5").prev().css("color","blue"); // 형 선택자 선택
-            
+            $(".obj5").next().css("color", "orange"); //동생 선택자 선택
+            $(".obj5").prev().css("color", "blue"); // 형 선택자 선택
+
             // 자신을 제외한 모든 형제을 선택
-            $(".obj6").siblings().css("text-align","center");
+            $(".obj6").siblings().css("text-align", "center");
 
             // 한번에 CSS을 작성하는 것을 체인닝 기법이라 한다.
-            $(":text").css({"background-color":"#ccc"},{"border":"solid 1px #000"}, {"color":"green"});
+            $(":text").css({
+                "background-color": "#ccc"
+            }, {
+                "border": "solid 1px #000"
+            }, {
+                "color": "green"
+            });
 
             // # 접근하는 것이 중요하다, 이것을 모두가 위처럼하지 않고 
             // 어떠한 애니메이션을 만들때 사용한다#
