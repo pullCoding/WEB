@@ -34,7 +34,44 @@
 
             $("#btn2").click(function () {
                 $(".box1").show(1000)
-            })
+            });
+
+            $("#btn3").click(function () {
+                $(".box2").toggle(1000);
+            });
+
+            $("#btn4").click(function () {
+                $(this).parent().next().slideUp(500);
+            });
+
+            $("#btn5").click(function () {
+                $(this).parent().next().slideDown(500);
+            });
+
+            $("#btn6").click(function () {
+                $(this).parent().next().slideToggle(500);
+            });
+
+            $("#btn7").click(function(){
+                $(this).parent().next().fadeIn(1000);
+            });
+
+            $("#btn8").click(function(){
+                $(this).parent().next().fadeOut(1000);
+            });
+
+            $("#btn9").click(function(){
+                $(this).parent().next().fadeToggle(1000);
+            });
+
+            $("#btn10").click(function(){
+                $(".box3").fadeTo("slow", 0.3);
+            });
+
+            // fast, normal, slow
+            $("#btn11").click(function(){
+                $(".box3").fadeTo("fast", 10);
+            });
         });
     </script>
 </head>
@@ -42,20 +79,23 @@
 <body>
     <div id="wrap">
         <h1>jQuery Effect</h1>
-        <p>제이쿼리에서는 화면전환, 슬라이드 다운과 업 효과 등<br />
+        <p>
+            제이쿼리에서는 화면전환, 슬라이드 다운과 업 효과 등<br />
             다양한 효과 메서드를 제공합니다.
         </p>
 
         <h2>show/hide 효과</h2>
         <p><button id="btn1">hide</button> <button id="btn2">show</button></p>
-        <p class="box1">선택 요소를 숨기거나 노출하고 싶을 경우에 사용함. <br />
+        <p class="box1">
+            선택 요소를 숨기거나 노출하고 싶을 경우에 사용함. <br />
             hide(시간)/show(시간) 시간은 fast, normal, slow 등으로 입력할 수 있으며,
             1000분의 1초 단위의 숫자로 표기할 수도 있음.
         </p>
 
         <h2>toggle 효과</h2>
         <p><button id="btn3">toggle</button></p>
-        <p class="box2">선택 요소가 숨겨져 있다면 보이게 하고, <br />
+        <p class="box2">
+            선택 요소가 숨겨져 있다면 보이게 하고, <br />
             보이고 있다면 숨기는 역할을 함.
         </p>
 
@@ -86,7 +126,8 @@
             <button id="btn10">fadeTo(0.3)</button>
             <button id="btn11">fadeTo(1)</button>
         </p>
-        <p class="box3">fadeTo는 선택 요소를 원하는 만큼 <br />
+        <p class="box3">
+            fadeTo는 선택 요소를 원하는 만큼 <br />
             보이거나 숨길 수 있다.
         </p>
     </div>
