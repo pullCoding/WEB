@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function () {
+            let w = $(window).width();
+            let h = $(window).height();
+
+            $("#box1 span").text(w);
+            // 높이는 위 nav값 때문에 정확하지 않음
+            $("#box2 span").text(h)
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box1">현재 화면의 넑이는? <span>0</span></div>
+    <div id="box2">현재 화면의 높이는? <span>0</span></div>
+</body>
+
+</html>
